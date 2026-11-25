@@ -1,0 +1,355 @@
+{
+  "dataset": "tuyenldvn/falldataset-imvia",
+  "sample_fps": 10,
+  "policy": {
+    "posture_threshold": 0.65,
+    "motion_threshold": 0.7,
+    "motion_confirmation": {
+      "frames": 2,
+      "max_gap": 0.65,
+      "immediate": 0.75
+    }
+  },
+  "selection": [
+    {
+      "video": "Home_01/Home_01/Videos/video (19).avi",
+      "bytes": 33373210,
+      "start_frame": 129,
+      "end_frame": 139
+    },
+    {
+      "video": "Home_01/Home_01/Videos/video (24).avi",
+      "bytes": 33373210,
+      "start_frame": 131,
+      "end_frame": 142
+    },
+    {
+      "video": "Home_01/Home_01/Videos/video (30).avi",
+      "bytes": 33373210,
+      "start_frame": 123,
+      "end_frame": 138
+    },
+    {
+      "video": "Home_02/Home_02/Videos/video (32).avi",
+      "bytes": 33373210,
+      "start_frame": 87,
+      "end_frame": 99
+    },
+    {
+      "video": "Home_02/Home_02/Videos/video (33).avi",
+      "bytes": 33373210,
+      "start_frame": 127,
+      "end_frame": 140
+    },
+    {
+      "video": "Home_02/Home_02/Videos/video (36).avi",
+      "bytes": 33373210,
+      "start_frame": 124,
+      "end_frame": 139
+    },
+    {
+      "video": "Home_02/Home_02/Videos/video (42).avi",
+      "bytes": 38879608,
+      "start_frame": 0,
+      "end_frame": 0
+    },
+    {
+      "video": "Home_02/Home_02/Videos/video (43).avi",
+      "bytes": 38879608,
+      "start_frame": 0,
+      "end_frame": 0
+    },
+    {
+      "video": "Home_02/Home_02/Videos/video (38).avi",
+      "bytes": 44432410,
+      "start_frame": 0,
+      "end_frame": 0
+    },
+    {
+      "video": "Home_02/Home_02/Videos/video (39).avi",
+      "bytes": 44432410,
+      "start_frame": 0,
+      "end_frame": 0
+    },
+    {
+      "video": "Home_02/Home_02/Videos/video (45).avi",
+      "bytes": 49985210,
+      "start_frame": 0,
+      "end_frame": 0
+    },
+    {
+      "video": "Home_02/Home_02/Videos/video (52).avi",
+      "bytes": 49985210,
+      "start_frame": 0,
+      "end_frame": 0
+    }
+  ],
+  "onset_window_seconds": [
+    -0.25,
+    1.5
+  ],
+  "results": {
+    "baseline_early": {
+      "detected_falls": 6,
+      "adl_clips_alerted": 6,
+      "fall_clips_alerted_too_early": 2,
+      "median_delay_s": -0.10416500000000029
+    },
+    "baseline_any": {
+      "detected_falls": 6,
+      "adl_clips_alerted": 6,
+      "fall_clips_alerted_too_early": 2,
+      "median_delay_s": -0.10416500000000029
+    },
+    "baseline_posture": {
+      "UPRIGHT": {},
+      "SITTING": {},
+      "LYING": {}
+    },
+    "learned_early": {
+      "detected_falls": 5,
+      "adl_clips_alerted": 4,
+      "fall_clips_alerted_too_early": 1,
+      "median_delay_s": 0.0833320000000004
+    },
+    "learned_any": {
+      "detected_falls": 5,
+      "adl_clips_alerted": 4,
+      "fall_clips_alerted_too_early": 1,
+      "median_delay_s": 0.0833320000000004
+    },
+    "learned_posture": {
+      "UPRIGHT": {},
+      "SITTING": {},
+      "LYING": {}
+    }
+  },
+  "recordings": [
+    {
+      "clip": "Home_01/Videos/video (19).avi",
+      "is_fall": true,
+      "onset": 5.333248,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          2.70829
+        ],
+        [
+          "EARLY_WARNING",
+          5.499912
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          5.20825
+        ]
+      ]
+    },
+    {
+      "clip": "Home_01/Videos/video (24).avi",
+      "is_fall": true,
+      "onset": 5.41658,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          5.20825
+        ],
+        [
+          "EARLY_WARNING",
+          5.583244
+        ],
+        [
+          "LYING_CHECK",
+          7.49988
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          5.499912
+        ],
+        [
+          "LYING_CHECK",
+          7.416548
+        ]
+      ]
+    },
+    {
+      "clip": "Home_01/Videos/video (30).avi",
+      "is_fall": true,
+      "onset": 5.083252,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          1.416644
+        ],
+        [
+          "EARLY_WARNING",
+          5.41658
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          5.20825
+        ],
+        [
+          "LYING_CHECK",
+          7.29155
+        ]
+      ]
+    },
+    {
+      "clip": "Home_02/Videos/video (32).avi",
+      "is_fall": true,
+      "onset": 3.5832759999999997,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          3.4999439999999997
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          3.708274
+        ]
+      ]
+    },
+    {
+      "clip": "Home_02/Videos/video (33).avi",
+      "is_fall": true,
+      "onset": 5.249916,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          5.083252
+        ],
+        [
+          "EARLY_WARNING",
+          5.41658
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          4.916588
+        ]
+      ]
+    },
+    {
+      "clip": "Home_02/Videos/video (36).avi",
+      "is_fall": true,
+      "onset": 5.124918,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          4.9999199999999995
+        ],
+        [
+          "EARLY_WARNING",
+          5.20825
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          4.916588
+        ]
+      ]
+    },
+    {
+      "clip": "Home_02/Videos/video (42).avi",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          3.999936
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          3.916604
+        ]
+      ]
+    },
+    {
+      "clip": "Home_02/Videos/video (43).avi",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          3.999936
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          3.916604
+        ]
+      ]
+    },
+    {
+      "clip": "Home_02/Videos/video (38).avi",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          4.58326
+        ]
+      ],
+      "learned": []
+    },
+    {
+      "clip": "Home_02/Videos/video (39).avi",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          5.9165719999999995
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          5.9165719999999995
+        ]
+      ]
+    },
+    {
+      "clip": "Home_02/Videos/video (45).avi",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          6.083235999999999
+        ]
+      ],
+      "learned": []
+    },
+    {
+      "clip": "Home_02/Videos/video (52).avi",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          6.208234
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          6.416564
+        ]
+      ]
+    }
+  ]
+}

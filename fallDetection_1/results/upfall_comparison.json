@@ -1,0 +1,834 @@
+{
+  "source": [
+    "GMDCSA24 v2.1",
+    "CAUCAFall keypoint export (subjects 1\u20137, training only)",
+    "UP-Fall skeleton export, DOI 10.5281/zenodo.12773013, subjects 1\u20133"
+  ],
+  "split": {
+    "train": 80,
+    "validation": 43,
+    "test": 37
+  },
+  "training_examples": {
+    "posture": {
+      "SITTING": 1187,
+      "LYING": 225,
+      "UPRIGHT": 1549
+    },
+    "motion": {
+      "non_fall": 3865,
+      "fall": 302
+    }
+  },
+  "auxiliary_training_examples": {
+    "lying": 1382,
+    "non_fall": 2216
+  },
+  "test_fall_clips": 17,
+  "test_fall_clips_with_onset": 16,
+  "test_adl_clips": 20,
+  "policy": {
+    "posture_threshold": 0.65,
+    "motion_threshold": 0.7
+  },
+  "validation_summary": {
+    "detected_falls": 19,
+    "adl_clips_alerted": 11,
+    "hard_negative_passes": 0
+  },
+  "results": {
+    "baseline_early": {
+      "detected_falls": 14,
+      "adl_clips_alerted": 11,
+      "fall_clips_alerted_too_early": 1,
+      "median_delay_s": 0.24960390215087402
+    },
+    "baseline_any": {
+      "detected_falls": 14,
+      "adl_clips_alerted": 11,
+      "fall_clips_alerted_too_early": 1,
+      "median_delay_s": 0.2113938666026105
+    },
+    "baseline_posture": {
+      "UPRIGHT": {
+        "UPRIGHT": 247,
+        "UNKNOWN": 81
+      },
+      "SITTING": {
+        "UPRIGHT": 1134,
+        "UNKNOWN": 64
+      },
+      "LYING": {
+        "UNKNOWN": 86,
+        "LYING": 74,
+        "UPRIGHT": 2
+      }
+    },
+    "learned_early": {
+      "detected_falls": 14,
+      "adl_clips_alerted": 8,
+      "fall_clips_alerted_too_early": 2,
+      "median_delay_s": 0.2047630121516013
+    },
+    "learned_any": {
+      "detected_falls": 15,
+      "adl_clips_alerted": 9,
+      "fall_clips_alerted_too_early": 2,
+      "median_delay_s": 0.20310191082802542
+    },
+    "learned_posture": {
+      "UPRIGHT": {
+        "UPRIGHT": 247,
+        "UNKNOWN": 81
+      },
+      "SITTING": {
+        "SITTING": 899,
+        "UPRIGHT": 264,
+        "UNKNOWN": 35
+      },
+      "LYING": {
+        "UNKNOWN": 80,
+        "LYING": 80,
+        "UPRIGHT": 1,
+        "SITTING": 1
+      }
+    }
+  },
+  "recordings": [
+    {
+      "clip": "Subject 4/ADL/01.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [],
+      "learned": []
+    },
+    {
+      "clip": "Subject 4/ADL/02.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [],
+      "learned": []
+    },
+    {
+      "clip": "Subject 4/ADL/03.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [],
+      "learned": []
+    },
+    {
+      "clip": "Subject 4/ADL/04.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [],
+      "learned": []
+    },
+    {
+      "clip": "Subject 4/ADL/05.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          2.8108181818181817
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          0.40154545454545454
+        ],
+        [
+          "EARLY_WARNING",
+          2.2085
+        ],
+        [
+          "EARLY_WARNING",
+          5.78894696969697
+        ],
+        [
+          "EARLY_WARNING",
+          7.294742424242425
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/ADL/06.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          1.0067755102040816
+        ],
+        [
+          "EARLY_WARNING",
+          1.1074530612244897
+        ],
+        [
+          "EARLY_WARNING",
+          1.3088081632653061
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          0.5033877551020408
+        ],
+        [
+          "LYING_CHECK",
+          3.7921877551020406
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/ADL/07.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          0.10053825503355704
+        ],
+        [
+          "EARLY_WARNING",
+          0.20107651006711408
+        ],
+        [
+          "EARLY_WARNING",
+          1.3069973154362415
+        ],
+        [
+          "EARLY_WARNING",
+          2.7145328859060402
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          0.20107651006711408
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/ADL/08.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          6.101698369565217
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          5.90054347826087
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/ADL/09.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [],
+      "learned": []
+    },
+    {
+      "clip": "Subject 4/ADL/10.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          4.591006282722513
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          0.6031979057591623
+        ],
+        [
+          "EARLY_WARNING",
+          5.3952701570680635
+        ],
+        [
+          "EARLY_WARNING",
+          9.014457591623037
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/ADL/11.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [],
+      "learned": []
+    },
+    {
+      "clip": "Subject 4/ADL/12.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [],
+      "learned": []
+    },
+    {
+      "clip": "Subject 4/ADL/13.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [],
+      "learned": []
+    },
+    {
+      "clip": "Subject 4/ADL/14.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [],
+      "learned": []
+    },
+    {
+      "clip": "Subject 4/ADL/15.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          0.7039050314465409
+        ],
+        [
+          "LYING_CHECK",
+          3.184332285115304
+        ]
+      ],
+      "learned": [
+        [
+          "LYING_CHECK",
+          2.1117150943396226
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/ADL/16.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          0.6031746478873239
+        ],
+        [
+          "EARLY_WARNING",
+          3.183421752738654
+        ],
+        [
+          "LYING_CHECK",
+          4.490300156494523
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          2.915344131455399
+        ],
+        [
+          "LYING_CHECK",
+          4.389771048513302
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/ADL/17.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          1.6065462365591399
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          0.9036822580645162
+        ],
+        [
+          "EARLY_WARNING",
+          4.585350716845879
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/ADL/18.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          0.8036541567695963
+        ]
+      ],
+      "learned": []
+    },
+    {
+      "clip": "Subject 4/ADL/19.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          1.4054864864864864
+        ],
+        [
+          "EARLY_WARNING",
+          7.09436036036036
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          0.40156756756756756
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/ADL/20.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          0.6030309751434034
+        ],
+        [
+          "EARLY_WARNING",
+          2.9146497131931164
+        ]
+      ],
+      "learned": []
+    },
+    {
+      "clip": "Subject 4/Fall/01.mp4",
+      "is_fall": true,
+      "onset": 1.8,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          1.909910071942446
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          1.909910071942446
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/02.mp4",
+      "is_fall": true,
+      "onset": 1.5,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          1.2043280898876405
+        ],
+        [
+          "LYING_CHECK",
+          1.3046887640449438
+        ],
+        [
+          "EARLY_WARNING",
+          1.8064921348314606
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          0.5018033707865168
+        ],
+        [
+          "LYING_CHECK",
+          1.3046887640449438
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/03.mp4",
+      "is_fall": true,
+      "onset": 1.7,
+      "baseline": [],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          2.112243
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/04.mp4",
+      "is_fall": true,
+      "onset": 1.2,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          1.2055063829787234
+        ],
+        [
+          "EARLY_WARNING",
+          1.6073418439716312
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          1.4064241134751772
+        ],
+        [
+          "EARLY_WARNING",
+          4.487162647754137
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/05.mp4",
+      "is_fall": true,
+      "onset": 2.7,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          2.816331221719457
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          2.816331221719457
+        ],
+        [
+          "LYING_CHECK",
+          4.29155233785822
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/06.mp4",
+      "is_fall": true,
+      "onset": 1.1,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          2.3111732240437157
+        ],
+        [
+          "EARLY_WARNING",
+          3.215545355191257
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          2.0097158469945353
+        ],
+        [
+          "LYING_CHECK",
+          2.81360218579235
+        ],
+        [
+          "EARLY_WARNING",
+          3.215545355191257
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/07.mp4",
+      "is_fall": true,
+      "onset": 2.4,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          2.21346914893617
+        ],
+        [
+          "EARLY_WARNING",
+          2.5153058510638298
+        ],
+        [
+          "LYING_CHECK",
+          4.292788652482269
+        ],
+        [
+          "EARLY_WARNING",
+          4.8964620567375885
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          2.012244680851064
+        ],
+        [
+          "LYING_CHECK",
+          4.292788652482269
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/08.mp4",
+      "is_fall": true,
+      "onset": 2.3,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          2.7104823529411766
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          2.610094117647059
+        ],
+        [
+          "EARLY_WARNING",
+          5.487890196078431
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/09.mp4",
+      "is_fall": true,
+      "onset": 2.3,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          2.513425414364641
+        ],
+        [
+          "EARLY_WARNING",
+          2.815036464088398
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          2.513425414364641
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/10.mp4",
+      "is_fall": true,
+      "onset": 2.2,
+      "baseline": [],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          2.11011059602649
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/11.mp4",
+      "is_fall": true,
+      "onset": 1.2,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          1.5093088235294116
+        ],
+        [
+          "EARLY_WARNING",
+          1.6099294117647058
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          1.3080676470588235
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/12.mp4",
+      "is_fall": true,
+      "onset": 1.5,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          1.7093623188405798
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          1.6088115942028987
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/13.mp4",
+      "is_fall": true,
+      "onset": 0.3,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          0.7037630872483222
+        ],
+        [
+          "LYING_CHECK",
+          2.010751677852349
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          0.4021503355704698
+        ],
+        [
+          "LYING_CHECK",
+          1.9102140939597314
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/14.mp4",
+      "is_fall": true,
+      "onset": 0.8,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          1.304032484076433
+        ],
+        [
+          "LYING_CHECK",
+          2.608064968152866
+        ],
+        [
+          "EARLY_WARNING",
+          2.808685350318471
+        ],
+        [
+          "EARLY_WARNING",
+          3.0093057324840764
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          1.0031019108280255
+        ],
+        [
+          "LYING_CHECK",
+          2.407444585987261
+        ],
+        [
+          "EARLY_WARNING",
+          3.0093057324840764
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/15.mp4",
+      "is_fall": true,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          2.3076772413793103
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          2.0066758620689655
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/16.mp4",
+      "is_fall": true,
+      "onset": 3.2,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          3.485782389937107
+        ],
+        [
+          "LYING_CHECK",
+          6.602876257861635
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          3.485782389937107
+        ],
+        [
+          "LYING_CHECK",
+          5.798464937106918
+        ]
+      ]
+    },
+    {
+      "clip": "Subject 4/Fall/17.mp4",
+      "is_fall": true,
+      "onset": 2.8,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          2.912370531400966
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          3.012797101449275
+        ],
+        [
+          "LYING_CHECK",
+          4.385293558776167
+        ]
+      ]
+    }
+  ],
+  "upfall_training": {
+    "sequences": 60,
+    "impact_windows": 1020
+  },
+  "upfall_impact_check": {
+    "reference": {
+      "15": {
+        "sequences": 21,
+        "detected": 7,
+        "premature": 19
+      },
+      "20": {
+        "sequences": 21,
+        "detected": 3,
+        "premature": 19
+      },
+      "25": {
+        "sequences": 21,
+        "detected": 3,
+        "premature": 19
+      }
+    },
+    "candidate": {
+      "15": {
+        "sequences": 21,
+        "detected": 2,
+        "premature": 21
+      },
+      "20": {
+        "sequences": 21,
+        "detected": 1,
+        "premature": 20
+      },
+      "25": {
+        "sequences": 21,
+        "detected": 1,
+        "premature": 20
+      }
+    }
+  }
+}

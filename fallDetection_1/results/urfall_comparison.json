@@ -1,0 +1,485 @@
+{
+  "dataset": "UR Fall Detection RGB previews",
+  "sample_fps": 10,
+  "clip_counts": {
+    "non_fall_adl": 12,
+    "fall": 12
+  },
+  "ground_truth": "whole clip only; no onset timestamps",
+  "sensor": "none",
+  "results": {
+    "baseline_early": {
+      "detected_falls": 11,
+      "adl_clips_alerted": 12
+    },
+    "baseline_any": {
+      "detected_falls": 11,
+      "adl_clips_alerted": 12
+    },
+    "learned_early": {
+      "detected_falls": 12,
+      "adl_clips_alerted": 8
+    },
+    "learned_any": {
+      "detected_falls": 12,
+      "adl_clips_alerted": 8
+    }
+  },
+  "recordings": [
+    {
+      "clip": "urfall/rgb/adl-01.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          3.6
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          3.5
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/adl-02.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          4.2
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          4.2
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/adl-03.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          3.4
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          3.3
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/adl-04.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          2.4
+        ]
+      ],
+      "learned": []
+    },
+    {
+      "clip": "urfall/rgb/adl-05.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          3.3
+        ],
+        [
+          "EARLY_WARNING",
+          3.9
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          3.5
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/adl-06.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          5.7
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          5.7
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/adl-07.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          3.9
+        ]
+      ],
+      "learned": []
+    },
+    {
+      "clip": "urfall/rgb/adl-08.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          4.2
+        ]
+      ],
+      "learned": []
+    },
+    {
+      "clip": "urfall/rgb/adl-09.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          3.9
+        ]
+      ],
+      "learned": []
+    },
+    {
+      "clip": "urfall/rgb/adl-10.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          4.8
+        ],
+        [
+          "LYING_CHECK",
+          9.7
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          4.5
+        ],
+        [
+          "EARLY_WARNING",
+          7.1
+        ],
+        [
+          "LYING_CHECK",
+          9.2
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/adl-11.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          4.7
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          4.7
+        ],
+        [
+          "LYING_CHECK",
+          9.0
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/adl-12.mp4",
+      "is_fall": false,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          5.6
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          5.4
+        ],
+        [
+          "EARLY_WARNING",
+          6.4
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/fall-01.mp4",
+      "is_fall": true,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          3.3
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          3.1
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/fall-02.mp4",
+      "is_fall": true,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          2.0
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          1.8
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/fall-03.mp4",
+      "is_fall": true,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          5.5
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          5.4
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/fall-04.mp4",
+      "is_fall": true,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          1.0
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          0.6
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/fall-05.mp4",
+      "is_fall": true,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          3.1
+        ],
+        [
+          "EARLY_WARNING",
+          3.2
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          3.1
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/fall-06.mp4",
+      "is_fall": true,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          1.1
+        ],
+        [
+          "EARLY_WARNING",
+          2.0
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          1.0
+        ],
+        [
+          "LYING_CHECK",
+          2.8
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/fall-07.mp4",
+      "is_fall": true,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          3.2
+        ],
+        [
+          "EARLY_WARNING",
+          3.3
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          3.2
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/fall-08.mp4",
+      "is_fall": true,
+      "onset": null,
+      "baseline": [],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          1.5
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/fall-09.mp4",
+      "is_fall": true,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          4.4
+        ],
+        [
+          "EARLY_WARNING",
+          4.5
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          4.3
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/fall-10.mp4",
+      "is_fall": true,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          1.4
+        ],
+        [
+          "EARLY_WARNING",
+          1.6
+        ],
+        [
+          "EARLY_WARNING",
+          1.8
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          1.7
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/fall-11.mp4",
+      "is_fall": true,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          2.0
+        ],
+        [
+          "LYING_CHECK",
+          4.3
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          1.9
+        ],
+        [
+          "LYING_CHECK",
+          4.2
+        ]
+      ]
+    },
+    {
+      "clip": "urfall/rgb/fall-12.mp4",
+      "is_fall": true,
+      "onset": null,
+      "baseline": [
+        [
+          "EARLY_WARNING",
+          1.5
+        ],
+        [
+          "EARLY_WARNING",
+          2.4
+        ],
+        [
+          "LYING_CHECK",
+          3.2
+        ]
+      ],
+      "learned": [
+        [
+          "EARLY_WARNING",
+          1.4
+        ],
+        [
+          "LYING_CHECK",
+          2.8
+        ]
+      ]
+    }
+  ]
+}
